@@ -5,6 +5,6 @@ rvm:
 
 before_script:
   - cp config/database.travis.yml config/database.yml
-  - psql -c 'create database mitracks_test;' -U postgres
+  - psql -c 'create database eat_cheap_test;' -U postgres
 script:
   - bundle exec rake spec
