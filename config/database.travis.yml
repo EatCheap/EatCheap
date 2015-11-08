@@ -1,4 +1,6 @@
-test:
+postgresql: &postgresql
   adapter: postgresql
   username: postgres
-  database: eat_cheap_test
+  password:
+  database: eat_cheap_<%= Rails.env %>
+  min_messages: ERROR
