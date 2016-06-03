@@ -1,5 +1,6 @@
-# require 'spec_helper'
+require 'rails_helper'
+require 'shoulda-matchers'
 
-# describe User do
-#
-# end
+RSpec.describe User, type: :model do
+  it { should validate_presence_of :email }
+end
