@@ -9,11 +9,19 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'devise'
+gem 'slim-rails'
+gem 'activeadmin', github: 'activeadmin'
 
 group :development, :test do
-  gem 'rspec-rails', '~> 2.99.0'
+  gem 'rspec-rails', '~> 3.0'
   gem 'pry-rails'
   gem 'pry'
-  gem 'web-console', '~> 2.0'
   gem 'spring'
+  gem 'factory_girl_rails', '~> 4.5.0'
+  gem 'shoulda'
+end
+
+group :development do
+  gem 'web-console', '~> 2.0'
 end
