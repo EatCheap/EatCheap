@@ -1,0 +1,4 @@
+test:
+  adapter: postgresql
+  username: postgres
+  database: eat_cheap_test
