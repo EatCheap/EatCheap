@@ -17,8 +17,11 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.0'
   gem 'pry-rails'
   gem 'pry'
-  gem 'web-console', '~> 2.0'
   gem 'spring'
-  gem 'factory_girl'
+  gem 'factory_girl_rails', '~> 4.5.0'
   gem 'shoulda'
+end
+
+group :development do
+  gem 'web-console', '~> 2.0'
 end
